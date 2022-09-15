@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Silkscreen", cursive;
+  /*overflow: hidden;*/
+}
+
+.simbawalking {
+  width: 75%;
+  margin-left: 10%;
+}
+.zazugif {
+  position: fixed;
+  top: 0%;
+  left: 78%;
+  z-index: 2;
+}
+
+.dropdownzazu {
+  display: block;
+  position: fixed;
+  padding: 1rem;
+  top: 10%;
+  left: 76%;
+  text-align: center;
+  background-color: #f9f9f900;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.banner {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner-video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner-video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.banner-content {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  font-size: 0.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.simba {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  left: -2rem;
+  background-color: #f9f9f900;
+  min-width: 15rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.section1 {
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.section2 {
+  padding: 0.1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.navsimba {
+  background-color: rgba(250, 235, 215, 0.752);
+  position: relative;
+  display: block;
+}
+
+.navsimba p {
+  padding: 0.5rem;
+}
+
+.nav-content {
+  padding: 0.5rem;
+  background-color: rgba(172, 86, 0, 0);
+  min-width: 12rem;
+}
+
+.nav-content a {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.8rem;
+  display: block;
+}
+
+.nav-content a:hover {
+  background-color: rgba(255, 0, 0, 0.703);
+  font-size: 0.7rem;
+  color: aliceblue;
+  transition: 0.8s;
+}
+
+.banner-title h1 {
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+  animation: blinking 2s infinite;
+}
+@keyframes blinking {
+  0% {
+    color: rgb(255, 170, 12);
+  }
+  47% {
+    color: rgb(113, 53, 3);
+  }
+  62% {
+    color: red;
+  }
+  97% {
+    color: rgb(108, 0, 0);
+  }
+  100% {
+    color: rgb(241, 255, 139);
+  }
+}
+
+.banner-content h2 {
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.banner-content h3 {
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.span1 {
+  font-size: 1.6rem;
+  animation: blinking 0.34s infinite;
+}
+
+.span2 {
+  font-size: 1rem;
+  animation: blinking 0.34s infinite;
+}
+
+.span4 {
+  font-size: 80%;
+}
+
+h3 {
+  background-color: rgba(255, 255, 255, 0.681);
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .dropdownzazu {
+    display: none;
+  }
+
+  .zazugif {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .banner-title h1 {
+    font-size: 4rem;
+  }
+
+  .simbawalking {
+    width: 100%;
+    margin-left: -10%;
+  }
+
+  .banner-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .nav-content {
+    display: flex;
+    padding: 0rem;
+    left: 3rem;
+    flex-wrap: wrap;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(172, 86, 0, 0);
+    min-width: 35rem;
+    z-index: 1;
+  }
+
+  .nav-content a {
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: block;
+  }
+
+  .nav-content a:hover {
+    background-color: rgba(255, 0, 0, 0.703);
+    font-size: 1rem;
+    color: aliceblue;
+    transition: 0.8s;
+  }
+
+  .span2 {
+    font-size: 1.7rem;
+  }
+
+  .span4 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .simba-hidden {
+    width: 40rem;
+  }
+
+  .dropdown-content {
+    left: -15rem;
+  }
+
+  h3 {
+    background-color: rgba(240, 248, 255, 0);
+  }
+
+  .simba-hidden p {
+    font-size: 1rem;
+  }
+}
+
+/*
+.cantwaitaudio {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+/*
+.simbacontainer {
+    background-color: black;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section1 {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+
+}
+
+.section2 { 
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    background-color: brown;
+    z-index: -3;
+}
+
+.simbacontainer:hover + .simbahidden {
+    display: block;
+}
+
+/*
+.dropdown-content {
+    margin-top: 3rem;
+    position: absolute;
+    left: 2rem;
+    background-color: azure;
+    min-width: 20rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.2rem;
+    z-index: 1;
+}
+*/
